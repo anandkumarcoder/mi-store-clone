@@ -1,5 +1,6 @@
 import React from 'react'
 import HotItemCard from "./HotItemCard.js"
+import "../styles/HotAccessories.css"
 
 const hotAccessories = ({music, musicCover}) => {
     return (
