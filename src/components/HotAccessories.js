@@ -2,11 +2,11 @@ import React from 'react'
 import HotItemCard from "./HotItemCard.js"
 import "../styles/HotAccessories.css"
 
-const hotAccessories = ({music, musicCover , smartDevice, smartDeviceCover}) => {
+const hotAccessories = ({music, musicCover , smartDevice, smartDeviceCover,home,homeCover,lifeStyle,lifeStyleCover,mobileAccessories,mobileAccessoriesCover}) => {
     return (
         <div className='hotAccessories'>
             <div>
-                <img src={musicCover || smartDeviceCover} alt="cover"  />
+                <img src={musicCover || smartDeviceCover || homeCover ||lifeStyleCover || mobileAccessoriesCover} alt="cover"  />
             </div>
 
             {/* 2nd div  */}
@@ -17,6 +17,18 @@ const hotAccessories = ({music, musicCover , smartDevice, smartDeviceCover}) => 
                 ))}
 
                  {smartDevice && smartDevice.map((item,index)=>(
+                    <HotItemCard key={item.image} name={item.name}  price={item.price}  image={item.image}  index={index} />
+                ))}
+
+                {home && home.map((item,index)=>(
+                    <HotItemCard key={item.image} name={item.name}  price={item.price}  image={item.image}  index={index} />
+                ))}
+
+                {lifeStyle && lifeStyle.map((item,index)=>(
+                    <HotItemCard key={item.image} name={item.name}  price={item.price}  image={item.image}  index={index} />
+                ))}
+
+                {mobileAccessories && mobileAccessories.map((item,index)=>(
                     <HotItemCard key={item.image} name={item.name}  price={item.price}  image={item.image}  index={index} />
                 ))}
             </div>
