@@ -10,6 +10,7 @@ import StarProduct from "./components/StarProduct.js"
 import HotAccessoriesMenu from "./components/HotAccessoriesMenu.js"
 import HotAccessories from "./components/HotAccessories.js"
 import ProductReview from "./components/ProductReviews.js"
+import Videos from "./components/videos.js"
 
 
 function App() {
@@ -36,6 +37,9 @@ function App() {
       </Routes>
       <Heading text= "PRODUCT REVIEWS" />
       <ProductReview  productReviews={data.productReviews} />
+
+      <Heading text= "VIDEOS" />
+      <Videos videos = {data.videos} />
 
       
       </Router>
