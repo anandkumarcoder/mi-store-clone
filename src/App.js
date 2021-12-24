@@ -9,6 +9,7 @@ import Heading from "./components/Heading.js"
 import StarProduct from "./components/StarProduct.js"
 import HotAccessoriesMenu from "./components/HotAccessoriesMenu.js"
 import HotAccessories from "./components/HotAccessories.js"
+import ProductReview from "./components/ProductReviews.js"
 
 
 function App() {
@@ -33,6 +34,9 @@ function App() {
 
       <Route exact path = "/mobileAccessories" element={ <HotAccessories mobileAccessories={data.hotAccessories.mobileAccessories} mobileAccessoriesCover={data.hotAccessoriesCover.mobileAccessories} />} />
       </Routes>
+      <Heading text= "PRODUCT REVIEWS" />
+      <ProductReview  productReviews={data.productReviews} />
+
       
       </Router>
     // this is jsx(combination of js and html)
