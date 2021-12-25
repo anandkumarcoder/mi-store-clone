@@ -11,6 +11,7 @@ import HotAccessoriesMenu from "./components/HotAccessoriesMenu.js"
 import HotAccessories from "./components/HotAccessories.js"
 import ProductReview from "./components/ProductReviews.js"
 import Videos from "./components/videos.js"
+import Banner from "./components/banner.js"
 
 
 function App() {
@@ -39,7 +40,9 @@ function App() {
       <ProductReview  productReviews={data.productReviews} />
 
       <Heading text= "VIDEOS" />
-      <Videos videos = {data.videos} />
+      <Videos videos = {data.videos } />
+      <Heading text ="IN THE PRESS" />
+      <Banner banner={data.banner}/>
 
       
       </Router>
