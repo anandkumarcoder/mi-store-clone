@@ -19,6 +19,7 @@
 }
 .navLinks:hover{
     color: orangered;
+    text-decoration: none;
 }
 
 .logo{

@@ -9,25 +9,25 @@ const Navbar = () => {
     return (
         <div className='nav'>
             <div className='logo'>
-                <Link to="/dsd">
+                <a href="/">
                     <img id='logoImage' src={data.logo} alt="Not" />
-                </Link>
+                </a>
                 </div>
 
-                <Link className="navLinks" to="/miphones">Mi Phones
-                </Link>
-                <Link className="navLinks" to="/tv">TV
-                </Link>
-                <Link className="navLinks" to="/laptops">Laptops
-                </Link>
-                <Link className="navLinks" to="/lifestyle">Lifestyle & fitness
-                </Link>
-                <Link className="navLinks" to="/home">Home
-                </Link>
-                <Link className="navLinks" to="/audio">Radio
-                </Link>
-                <Link className="navLinks" to="/accessories">Accessories
-                </Link>
+                <a className="navLinks" href="/miPhones">Mi Phones
+                </a>
+                <a className="navLinks" href="/tv">TV
+                </a>
+                <a className="navLinks" href="/laptops">Laptops
+                </a>
+                <a className="navLinks" href="/lifestyle">Lifestyle & fitness
+                </a>
+                <a className="navLinks" href="/home">Home
+                </a>
+                <a className="navLinks" href="/audio">Radio
+                </a>
+                <a className="navLinks" href="/accessories">Accessories
+                </a>
 
                 <div className='searchBox'>
                     <input type="text" name='search' placeholder='search products' /> {searchIcon}
