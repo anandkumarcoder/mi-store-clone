@@ -16,6 +16,8 @@ const Navbar = () => {
 
                 <a className="navLinks" href="/miPhones">Mi Phones
                 </a>
+                <a className="navLinks" href="/redmiPhones">Redmi Phones
+                </a>
                 <a className="navLinks" href="/tv">TV
                 </a>
                 <a className="navLinks" href="/laptops">Laptops
