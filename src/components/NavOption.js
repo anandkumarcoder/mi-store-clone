@@ -40,7 +40,7 @@ const NavOption = ({ miPhones,redmiPhones,tv,laptop,fitnessAndLifestyle,home,acc
 
     return (
         <div className='navOptions'>
-            <div className='dropDown'>
+            {/* <div className='dropDown'> */}
             {miPhonesToggle ? miPhones.map((item) => (
                 <NavCard name={item.name} price={item.price} image={item.image} key={item.image} />
             )) : null}
@@ -72,7 +72,7 @@ const NavOption = ({ miPhones,redmiPhones,tv,laptop,fitnessAndLifestyle,home,acc
 {accessoriesToggle ? accessories.map((item) => (
                 <NavCard name={item.name} price={item.price} image={item.image} key={item.image} />
             )) : null}
-            </div>
+            {/* </div> */}
         </div>
     )
 }
