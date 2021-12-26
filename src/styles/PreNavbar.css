@@ -18,6 +18,14 @@ align-items: center;
 
 }
 
+.preNav > div svg{
+    fill: rgb(180, 180, 180);
+}
+
+.preNav > div svg:hover{
+    fill: rgb(255, 255, 255);
+}
+
 .preNav > div >  a{
     color: rgba(180, 180, 180);
     font-weight: 300;
