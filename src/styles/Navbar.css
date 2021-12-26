@@ -17,10 +17,24 @@
     font-size: 1.1vmax;
     color: rgb(61, 61, 61);
 }
-.navLinks:hover{
+.navOptions{
+    display: none;
+    background-color: white;
+    justify-content: space-evenly;
+    padding: 2vmax;
+    z-index: 1000;
+}
+.navLinks:hover {
     color: orangered;
     text-decoration: none;
 }
+
+.navLinks:hover .navOptions {
+    display: block;
+    
+}
+    
+
 
 .logo{
     background-color: orangered;
@@ -59,3 +73,4 @@
 .searchBox >svg{
     fill: rgb(61, 61, 61);
 }
+
