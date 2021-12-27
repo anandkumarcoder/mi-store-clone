@@ -21,6 +21,7 @@ function App() {
       <PreNavbar/>
       <Navbar/>
       <NavOption miPhones = {data.miPhones} redmiPhones={data.redmiPhones} tv={data.tv} laptop ={data.laptop} fitnessAndLifestyle = {data.fitnessAndLifeStyle} home={data.home} accessories = {data.accessories} audio={data.audio} />
+
       <Slider start={data.banner.start}/>
       <Offers offer={data.offer} />
       <Heading text= "STAR PRODUCTS" />

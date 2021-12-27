@@ -17,24 +17,21 @@
     font-size: 1.1vmax;
     color: rgb(61, 61, 61);
 }
-.navOptions{
-    display: none;
-    background-color: white;
-    justify-content: space-evenly;
-    padding: 2vmax;
-    z-index: 1000;
-}
-.navLinks:hover {
+
+
+
+.navLinks:hover   {
     color: orangered;
     text-decoration: none;
-}
-
-.navLinks:hover .navOptions {
-    display: block;
     
 }
-    
 
+/* a:hover + .navOptions { display: flex } */
+
+  /* .navLinks:hover ~ .miPhonesDropDown {
+    display: flex;
+    
+}  */
 
 .logo{
     background-color: orangered;
